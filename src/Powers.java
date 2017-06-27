@@ -13,15 +13,20 @@ public class Powers {
 
         double numSq = Math.pow(input, 2);
         double numCu = Math.pow(input, 3);
-        System.out.println("Number    Squared        Cubed");
-        System.out.println(" " + input + "       " + numSq + "          " + numCu +'\n');
+        String heading1 = "Number";
+        String heading2 = "Squared";
+        String heading3 = "Cubed";
+        String divider = "-----------------------------------------";
+        System.out.printf("%-15s %-15s %-15s %n", heading1, heading2, heading3);
+        System.out.println(divider);
+        System.out.printf("%-15.0f %-15.0f %-15.0f %n", input, numSq, numCu);
 
 
     }
 
     public static char getUserInput() {
         Scanner scnr = new Scanner(System.in); // create a scanner object
-        System.out.println("Enter 'y' to continue or 'n' to quit");
+        System.out.println("\nEnter 'y' to continue or 'n' to quit");
         // cast uppercase to lowercase
         String userInput = scnr.next().toLowerCase();
 
