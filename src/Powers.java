@@ -8,18 +8,18 @@ public class Powers {
 
     public void userNum() {
         System.out.println("Please enter a number: ");
-        double input = scnr.nextInt();
+        int input = scnr.nextInt();
 
 
-        double numSq = Math.pow(input, 2);
-        double numCu = Math.pow(input, 3);
+        int numSq = (int)(Math.pow(input, 2));
+        int numCu = (int)(Math.pow(input, 3));
         String heading1 = "Number";
         String heading2 = "Squared";
         String heading3 = "Cubed";
         String divider = "-----------------------------------------";
         System.out.printf("%-15s %-15s %-15s %n", heading1, heading2, heading3);
         System.out.println(divider);
-        System.out.printf("%-15.0f %-15.0f %-15.0f %n", input, numSq, numCu);
+        System.out.printf("%-15s %-15s %-15s %n", input, numSq, numCu);
 
 
     }
